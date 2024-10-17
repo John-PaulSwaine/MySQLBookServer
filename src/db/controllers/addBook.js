@@ -1,5 +1,4 @@
 const Book = require('../models/bookModel')
-const bookModel = require('../models/bookModel')
 
 const addBook = async (req, res) => {
     try {
