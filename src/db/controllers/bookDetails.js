@@ -8,7 +8,7 @@ const bookDetails = async (req, res) => {
         res.status(200).json(output)
         console.log(output)
     } catch (error) {
-        res.status(418)
+        res.status(418).json(error)
         console.log(error)
     }
 }

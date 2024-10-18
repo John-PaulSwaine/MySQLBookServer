@@ -11,7 +11,7 @@ const updateAuthor = async (req, res) => {
         res.status(200).json(outcome)
         console.log(outcome)
     } catch (error) {
-        res.status(418)
+        res.status(418).json(error)
         console.log(error)
     }
 }

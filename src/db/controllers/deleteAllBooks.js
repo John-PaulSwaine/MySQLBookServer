@@ -1,10 +1,10 @@
-const bookModel = require('../models/bookModel')
+const Book = require('../models/bookModel')
 
 const deleteAllBooks = async (req, res) => {
     try {
-        
+
     } catch (error) {
-        res.status(418)
+        res.status(418).json(error)
         console.log(error)
     }
 }
