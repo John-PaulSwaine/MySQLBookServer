@@ -1,12 +1,11 @@
-const { where } = require('sequelize')
 const Book = require('../models/bookModel')
 
-const updateAuthor = async (request, res) => {
+const updateAuthor = async (req, res) => {
     try {
         const outcome = await Book.update(
-            {author: request.body.author},            
+            {author: req.body.author},            
             {where: {
-                title : request.body.title
+                title : req.body.title
             }}
         ) 
         res.status(200).json(outcome)
